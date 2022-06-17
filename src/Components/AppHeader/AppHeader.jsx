@@ -1,9 +1,11 @@
 import "./AppHeader.css";
-const AppHeader = () => {
+const AppHeader = ({ countLikes, countPosts }) => {
   return (
     <div className="AppHeader d-flex">
       <h1>Soatmurodov Baxrom</h1>
-      <h2>5 posts,0 likes</h2>
+      <h2>
+        {countPosts}posts,{countLikes} likes
+      </h2>
     </div>
   );
 };
